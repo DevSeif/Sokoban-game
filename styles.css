@@ -1,0 +1,51 @@
+
+body{
+    margin: auto;
+    width: 800px;
+    height: 800px;
+    text-align: center;
+    background-color: lightslategrey;
+}
+
+#gamemap{
+    display: grid;
+    grid-template-columns: repeat(19, auto);
+}
+
+#gamemap div{
+    width: 45px;
+    height: 45px; 
+    outline: 1px solid black;
+}
+
+#header{
+    color: white;
+}
+
+.W, .B, .G, .P, .E, .BG{
+    background-size: cover;
+}
+
+.BG {
+    background-image: url("images/ScoreBox.png");
+}
+
+.W {
+    background-image: url("images/Wall.png");
+}
+
+.G {
+    background-image: url("images/Goal.png");
+}
+
+.B {
+    background-image: url("images/Box.png");
+}
+
+.P {
+    background-image: url("images/Player.png");
+}
+
+.E{
+    background-image: url("images/Floor.png");
+}
