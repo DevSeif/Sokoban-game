@@ -1,7 +1,7 @@
 var gamemap = document.getElementById("gamemap");
-var playerX = 13;
+var playerX = 10;
 var playerY = 11;
-var goalAmount = 2;
+var goalAmount = 6;
 var temp = "E";
 
 document.addEventListener("keydown", function (e) {
@@ -37,11 +37,11 @@ function move(y, x) {
     checkIfWin();
 }
 
-for (i = 0; i < tileMap01.mapGrid.length; i++) {
-    for (j = 0; j < tileMap01.mapGrid[i].length; j++) {
+for (i = 0; i < tileMap03.mapGrid.length; i++) {
+    for (j = 0; j < tileMap03.mapGrid[i].length; j++) {
         let element = document.createElement("div");
-        if (tileMap01.mapGrid[i][j] == " ") { gamemap.appendChild(element).className = "E"; }
-        else { gamemap.appendChild(element).className = tileMap01.mapGrid[i][j]; }
+        if (tileMap03.mapGrid[i][j] == " ") { gamemap.appendChild(element).className = "E"; }
+        else { gamemap.appendChild(element).className = tileMap03.mapGrid[i][j]; }
         gamemap.appendChild(element).id = `${i},${j}`;
     }
 }
